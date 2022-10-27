@@ -1,0 +1,14 @@
+{
+  "name": "pass-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "NxReason",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^21.2.0"
+  }
+}
