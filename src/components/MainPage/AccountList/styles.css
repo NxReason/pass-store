@@ -1,0 +1,60 @@
+.account-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  row-gap: 1.5em;
+  column-gap: 1.5em;
+  margin-right: 40px;
+  width: calc(100vw - 160px);
+}
+
+.account-card {
+  width: 240px;
+  height: 110px;
+  border-radius: 8px;
+  background-color: var(--color-main-light);
+  overflow: hidden;
+}
+.account-card-title {
+  height: 38px;
+  padding: 0 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-main);
+}
+.account-card-title h3 {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.account-card-title .icon {
+  transition: transform 0.2s ease-in-out;
+}
+.account-card-title .icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.account-card-title .icon-edit {
+  margin-right: 0.5em;
+}
+
+.account-card-info {
+  padding: 0 1em;
+  padding-top: 0.5em;
+}
+.ac-field {
+  display: flex;
+  align-items: center;
+  max-width: 230px;
+  overflow: hidden;
+}
+.ac-field:first-of-type {
+  margin-bottom: 0.5em;
+}
+.ac-field .icon {
+  margin-right: 0.25em;
+  flex-shrink: 0;
+}

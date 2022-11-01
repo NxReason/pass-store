@@ -40,3 +40,23 @@ button {
   width: 24px;
   background-image: url('/icons/enter.svg');
 }
+.icon-search {
+  background-image: url('/icons/search.svg');
+}
+.icon-new-entry {
+  width: 23px;
+  background-image: url('/icons/new-entry.svg');
+}
+.icon-gen {
+  width: 26px;
+  height: 17px;
+  background-image: url('/icons/gen.svg');
+}
+.icon-edit {
+  width: 24px;
+  height: 24px;
+  background-image: url('/icons/edit.svg');
+}
+.icon-remove {
+  background-image: url('/icons/remove.svg');
+}

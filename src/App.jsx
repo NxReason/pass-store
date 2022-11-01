@@ -1,4 +1,4 @@
-import { createSignal, Show } from 'solid-js';
+import { Show } from 'solid-js';
 
 import { useUser } from './state/UserContext';
 import LoginPage from './components/LoginPage';

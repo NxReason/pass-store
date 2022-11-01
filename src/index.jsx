@@ -6,7 +6,7 @@ import App from './App';
 
 render(
   () => (
-    <UserProvider>
+    <UserProvider loggedIn="false">
       <App />
     </UserProvider>
   ),
