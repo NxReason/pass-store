@@ -1,6 +1,14 @@
 import { render } from 'solid-js/web';
 import './index.css';
 
+import { UserProvider } from './state/UserContext';
 import App from './App';
 
-render(() => <App />, document.getElementById('root'));
+render(
+  () => (
+    <UserProvider>
+      <App />
+    </UserProvider>
+  ),
+  document.getElementById('root')
+);

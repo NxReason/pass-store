@@ -1,9 +1,11 @@
 import { createSignal, Show } from 'solid-js';
+
+import { useUser } from './state/UserContext';
 import LoginPage from './components/LoginPage';
 import MainPage from './components/MainPage';
 
 export default function App() {
-  const [loggedIn, setLoggedIn] = createSignal(false);
+  const [loggedIn] = useUser();
 
   return (
     <>

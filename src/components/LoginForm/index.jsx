@@ -1,9 +1,12 @@
 import { createEffect, createSignal } from 'solid-js';
 import './LoginForm.css';
 
+import { useUser } from '../../state/UserContext';
+
 export default function LoginForm() {
   const [name, setName] = createSignal('');
   const [pass, setPass] = createSignal('');
+  const [_, setLoggedIn] = useUser();
 
   const handleNameChange = e => {
     setName(e.target.value);
@@ -15,7 +18,9 @@ export default function LoginForm() {
   const handleFormSubmit = async e => {
     e.preventDefault();
     const res = await window.IPC.login(name(), pass());
-    console.log(res);
+    if (res) {
+      setLoggedIn(true);
+    }
   };
 
   return (
