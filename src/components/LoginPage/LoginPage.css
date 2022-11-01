@@ -1,0 +1,13 @@
+.login-page {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    var(--color-main-dark),
+    var(--color-main)
+  );
+}

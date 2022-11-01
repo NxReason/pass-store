@@ -1,8 +1,42 @@
 :root {
   font: 400 16px Inter, sans-serif;
+  color: var(--color-text);
+
+  --color-text: #fff;
+  --color-main-dark: #2c0735;
+  --color-main: #4e148c;
+  --color-main-light: #613dc1;
+  --color-effects: #858ae3;
+  --color-light: #97dffc;
+  --color-bg: #120315;
 }
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+input {
+  font: inherit;
+  color: var(--color-text);
+}
+button {
+  font: inherit;
+  color: var(--color-text);
+}
+.icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+}
+.icon-user {
+  width: 23px;
+  background-image: url('/icons/user.svg');
+}
+.icon-key {
+  background-image: url('/icons/key.svg');
+}
+.icon-enter {
+  width: 24px;
+  background-image: url('/icons/enter.svg');
 }
