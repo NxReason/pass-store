@@ -4,11 +4,18 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "cross-env NODE_ENV=dev electron .",
+    "ui:dev": "vite",
+    "ui:build": "vite build"
   },
   "author": "NxReason",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^21.2.0"
+    "babel-preset-solid": "^1.6.1",
+    "cross-env": "^7.0.3",
+    "electron": "^21.2.0",
+    "solid-js": "^1.6.1",
+    "vite": "^3.2.2",
+    "vite-plugin-solid": "^2.3.10"
   }
 }

@@ -1,5 +1,6 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
+const isDev = process.env.NODE_ENV === 'dev';
 
 const createWindow = () => {
   const win = new BrowserWindow({
@@ -11,7 +12,12 @@ const createWindow = () => {
   });
 
   ipcMain.handle('ping', () => 'pong');
-  win.loadURL('index.html');
+
+  if (isDev) {
+    win.loadURL('http://localhost:3000');
+  } else {
+    win.loadFile('./ui/index.html');
+  }
 };
 
 app.whenReady().then(() => {
