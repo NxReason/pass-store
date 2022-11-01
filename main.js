@@ -1,5 +1,7 @@
-const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
+const { app, BrowserWindow, ipcMain } = require('electron');
+const login = require('./backend/login');
+
 const isDev = process.env.NODE_ENV === 'dev';
 
 const createWindow = () => {
@@ -21,6 +23,7 @@ const createWindow = () => {
 };
 
 app.whenReady().then(() => {
+  ipcMain.handle('login', login);
   createWindow();
 
   app.on('activate', () => {
